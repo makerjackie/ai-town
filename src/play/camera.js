@@ -100,13 +100,13 @@ export function createPlay(camera, renderer, colliders, clickables, onRheostat) 
 
   function paintHint() {
     if (state.mode === "cinematic") {
-      hint.textContent = "巡游中 · 点击走进夜市 · F 电影镜头 · V 鸟瞰 · L 切榜 · R 拧变阻器";
+      hint.textContent = "巡游中 · 点击走进夜市 · F 电影镜头 · V 斜俯 · L 切榜 · R 拧变阻器";
     } else if (state.mode === "orbit") {
       hint.textContent = "斜俯 · 拖动旋转 · 滚轮远近 · 右键平移 · C 巡游 · G 落地 · F 飞";
     } else if (state.mode === "fly") {
-      hint.textContent = `电影镜头 · WASD 飞 · QE 升降 · Shift 加速 · 滚轮调速 ${state.flySpeed.toFixed(0)} · Esc 落地 · C 巡游 · V 鸟瞰`;
+      hint.textContent = `电影镜头 · WASD 飞 · QE 升降 · Shift 加速 · 滚轮调速 ${state.flySpeed.toFixed(0)} · Esc 落地 · C 巡游 · V 斜俯`;
     } else {
-      hint.textContent = "走路 · WASD · 鼠标环顾 · F 电影镜头 · V 鸟瞰 · C 巡游 · 点击建筑 · L 榜 · R 变阻器";
+      hint.textContent = "走路 · WASD · 鼠标环顾 · F 电影镜头 · V 斜俯 · C 巡游 · 点击建筑 · L 榜 · R 变阻器";
     }
   }
 
